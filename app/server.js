@@ -1,7 +1,16 @@
-let express = require('express') //llamamos a Express
-let app = express()               
+const express = require('express'); //llamamos a Express
+const app = express();
+const router= express.router;
 
-let port = process.env.PORT || 8080  // establecemos nuestro puerto
+const port = process.env.PORT || 3080  // establecemos nuestro puerto
+
+router.get('/api/getAllData', controller.getAllData);
+router.post('/api/addNewData' , controller.addNewData);
+router.put('/api/updateData',controller.updateData);
+router.delete('/api/deleteData' , controller.deleteData);
+module.exports = router;
+
+
 
 app.get('/', function(req, res) {
   res.json({ mensaje: '¡Hola Mundo!' })   
