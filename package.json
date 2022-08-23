@@ -1,0 +1,13 @@
+{ "name": "20220822",
+"version": "1.0.0",
+"description": "Inventarios",
+  "scripts": {
+  "start": "node app/server.js"
+},
+  "devDependencies": {
+    "eslint": "^8.22.0"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
+  }  
+}
