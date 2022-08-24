@@ -1,6 +1,6 @@
 const { sql,poolPromise } = require('../database/db');
 const fs = require('fs');
-let rawdata = fs.readFileSync('./query/queries.json');
+let rawdata = fs.readFileSync('../query/queries.json');
 let queries = JSON.parse(rawdata);
 
  class MainController { 
@@ -83,4 +83,4 @@ let queries = JSON.parse(rawdata);
 }
 
 const controller = new MainController();
-module.exports = controller;
+exports = controller;
